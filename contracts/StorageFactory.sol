@@ -1,8 +1,8 @@
 pragma solidity 0.4.23;
 import "./Storage.sol";
-import "https://github.com/optionality/clone-factory/blob/master/contracts/CloneFactory.sol";
+import "./CloneFactory.sol";
 
-contract StorageFactory {
+contract StorageFactory is CloneFactory {
     address public admin;
     address public implementation;
     address[] public clonedContracts;   
